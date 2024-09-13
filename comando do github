@@ -1,0 +1,68 @@
+1. Inicializar o Git no projeto
+Primeiro, abra o terminal e navegue até a pasta do seu projeto. Por exemplo, se sua pasta do projeto está na área de trabalho, use o comando:
+
+bash
+Copiar código
+cd ~/Desktop/nome-da-pasta-do-seu-projeto
+Agora, para inicializar o Git:
+
+bash
+Copiar código
+git init
+Isso cria um repositório Git local na pasta do seu projeto.
+
+2. Adicionar o repositório remoto
+Vá ao seu repositório no GitHub e copie o link do repositório (ele será algo como https://github.com/seu-usuario/nome-do-repositorio.git).
+
+No terminal, ainda na pasta do projeto, adicione o repositório remoto:
+
+bash
+Copiar código
+git remote add origin https://github.com/seu-usuario/nome-do-repositorio.git
+3. Criar o .gitignore
+O .gitignore serve para ignorar arquivos/pastas que você não deseja enviar para o GitHub (como node_modules, que contém pacotes baixados e não precisam ser versionados).
+
+Crie um arquivo .gitignore:
+
+No terminal, use o comando:
+bash
+Copiar código
+touch .gitignore
+Abra o arquivo com seu editor de código (como VSCode) ou no terminal com:
+bash
+Copiar código
+nano .gitignore
+Dentro do arquivo, adicione:
+bash
+Copiar código
+node_modules
+dist
+.env
+Salve o arquivo.
+
+4. Adicionar os arquivos para commit
+Agora, adicione todos os arquivos do projeto para o commit com o comando:
+
+bash
+Copiar código
+git add .
+O ponto (.) indica que você está adicionando todos os arquivos e pastas.
+
+5. Criar um commit
+Depois de adicionar os arquivos, você deve fazer o commit, que é como tirar uma "foto" do estado atual do seu projeto:
+
+bash
+Copiar código
+git commit -m "Subindo o projeto do cardápio online"
+6. Enviar os arquivos para o GitHub
+Agora, envie seus arquivos para o GitHub com o comando:
+
+bash
+Copiar código
+git push -u origin main
+Se o nome da branch for diferente de main, substitua main pelo nome correto (pode ser master ou outro).
+
+7. Verifique no GitHub
+Abra seu repositório no GitHub e veja se os arquivos foram enviados corretamente.
+
+Esses são os comandos básicos. Se tiver algum erro ou dúvida em qualquer etapa, pode me avisar e eu ajudo você a resolver!
